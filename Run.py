@@ -24,7 +24,7 @@ from MLP_v8_0 import *
 Predictor = 'GID'   
 #Datos
 os.getcwd()
-Dir_DataSet =  os.path.normpath(os.path.join(Dir,'../../dat-PP/'))
+Dir_DataSet =  os.path.normpath(os.path.join(Dir,'/dat-PP/'))
 Folds_df = pd.read_csv(os.path.join(Dir_DataSet,'10Folds_df.csv'))
 Folds_df.head()
 DataSets =  ['Wheat_'+str(j+1)+'_AL' for j in range(6)]
